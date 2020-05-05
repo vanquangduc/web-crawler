@@ -31,4 +31,4 @@ def delete_file_contents(path):
     with open(path, 'w'):
         pass
 
-#
+#hello
