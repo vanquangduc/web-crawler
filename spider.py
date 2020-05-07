@@ -1,4 +1,4 @@
-from urllib import urlopen
+from urllib.request import urlopen
 from link_finder import LinkFinder
 from general import *
 
@@ -20,7 +20,7 @@ class Spider:
         Spider.queue_file = Spider.project_name + '/queue.txt'
         Spider.crawled_file = Spider.project_name + '/crawled.txt'
         self.boot()
-        self.crawl_page('First spider ', Spider.base_url)
+        self.crawl_page('First spider', Spider.base_url)
         
     @staticmethod
     def boot():
